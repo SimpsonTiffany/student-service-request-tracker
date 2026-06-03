@@ -21,19 +21,19 @@
     <section>
         <h2>Submit New Request</h2>
 
-        <form>
+        <form id="requestForm">
             <label>Request Title</label><br>
-            <input type="text"><br><br>
+            <input type="text" id="title" required><br><br>
 
             <label>Category</label><br>
-            <select>
+            <select id="category">
                 <option>IT Support</option>
                 <option>Account Help</option>
                 <option>General Question</option>
             </select><br><br>
 
             <label>Description</label><br>
-            <textarea rows="5"></textarea><br><br>
+            <textarea id="description" rows="5" required></textarea><br><br>
 
             <button type="submit">Submit Request</button>
         </form>
@@ -41,9 +41,12 @@
 
     <section>
         <h2>Tracking Dashboard</h2>
-        <p>Request list will appear here.</p>
+        <div id="requestList">
+            <p>Request list will appear here.</p>
+        </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
